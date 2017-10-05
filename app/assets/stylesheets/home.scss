@@ -1,0 +1,16 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "_variables";
+
+.level_1_header {
+	font-size: $level_1_header_font_size;
+}
+
+.level_2_header {
+	font-size: $level_2_header_font_size;
+}
+
+.home_image {
+	width: 100%;
+}
