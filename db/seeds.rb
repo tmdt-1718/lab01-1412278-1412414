@@ -5,9 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Article.delete_all
+#User.delete_all
+
 Article.create!(name: 'LA LA LA', author: 'Phu')
 Article.create!(name: 'LA LA LA 2', author: 'Phu 2')
 
-(1..10).each do |user|
-	User.create!(fname: Faker::Name.first_name, lname: Faker::Name.last_name, pnumber: Faker::PhoneNumber.phone_number, email: Faker::Internet.email, pwd: Faker::Internet.password(8))
-end
+#(1..10).each do |user|
+#	User.create!(firstname: Faker::Name.first_name, lastname: Faker::Name.last_name, phonenumber: Faker::PhoneNumber.phone_number, email: Faker::Internet.email, password: 'vuongngockim')
+#end
