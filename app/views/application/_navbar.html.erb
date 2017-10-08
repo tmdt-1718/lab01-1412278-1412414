@@ -18,7 +18,7 @@
                     <li class="<%= yield(:active_home) %>"><a href="/">Home</a></li>
                     <li class="<%= yield(:active_album) %>"><a href="#">Album</a></li>
                     <li class="<%= yield(:active_about) %>"><a href="#">About</a></li>
-                    <li class="<%= yield(:active_blog) %>"><a href="#">Blog</a></li>
+                    <li class="<%= yield(:active_blog) %>"><a href="<%= articles_path %>">Blog</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <% if session[:firstname_current_user] && session[:lastname_current_user] %>
