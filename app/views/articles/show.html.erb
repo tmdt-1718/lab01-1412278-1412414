@@ -1,0 +1,17 @@
+<% content_for :title, "Article" %>
+<h1>Article</h1>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <%= @article["title"] %>
+    </div>
+    <div class="panel-body">
+        by
+        <%= @article["author"] %>
+    </div>
+    <div class="panel-body">
+        <img src="<%= image_path(@article["avartar"]) %>" class="img-rounded" alt="<%= @article["title"] %>" width="304" height="236">
+    </div>
+    <div class="panel-body">
+        <%= @article["content"] %>
+    </div>
+</div>

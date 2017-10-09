@@ -1,14 +1,18 @@
+<% content_for :title, "Blog" %>
 <h1>Articles</h1>
 <% @articles.each do |article| %>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <%=article.name%>
+            <a href="<%= article_path(article.id) %>"><%= article.title %></a>
         </div>
         <div class="panel-body">
-            by <%=article.author%>
+            by <%= article.author %>
+       </div>
+        <div class="panel-body">
+            <img src="<%= image_path(article.avartar) %>" class="img-rounded" alt="<%= article.title %>" width="304" height="236">
         </div>
         <div class="panel-body">
-            
-        </div>
+        	<%= article.summary %>
+       	</div>
     </div>
 <% end %>
