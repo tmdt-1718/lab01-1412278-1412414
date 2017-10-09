@@ -5,3 +5,4 @@ run mkdir lab01
 workdir /lab01
 expose 3000
 add . /lab01
+run bundle install

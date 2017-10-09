@@ -20,6 +20,7 @@ class ArticlesController < ApplicationController
 		article["view"] = 0
 		article["author"] = session[:firstname_current_user] + " " + session[:lastname_current_user]
 		article["avartar"] = "blank.png"
+		article["id"] = max_id
 
 		if article.save
 			flash[:success] = "Posted successfully!!!!"

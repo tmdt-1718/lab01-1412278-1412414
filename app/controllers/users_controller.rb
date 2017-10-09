@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
 		if user.nil?
 			@user = User.new(user_params)
+			@user["id"] = max_id
 			@user.password = user_password_params
 			
 			if @user.save
