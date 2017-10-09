@@ -1,32 +1,48 @@
+<h1>
+  Nhóm : 1412278_1412414
+</h1>
+
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="<%=image_path("khanh_lam.jpg")%>" style="width:400px;height:400px" alt="khanh lam">
+    <div class="card-block">
+      <h4 class="card-title">1412278_Phan Khánh Lâm</h4>
+      <p class="card-text">Email: lam0196vn@gmail.com></p>
+      <p class="card-text"><class="text-muted"></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="<%=image_path("thien_phu.jpg")%>" style="width:400px;height:400px" alt="thien phu">
+    <div class="card-block">
+      <h4 class="card-title">1412414_Vương Thiên Phú</h4>
+      <p class="card-text">Email: thienphuvuong@gmail.com</p>
+    </div>
+  </div>
+  </div>
+<
+<div class="row">
 <div class="col-md-5">
-  <h1>
-    Nhom : 1412278_1412414
-  </h1>
-  <h6>
-    Thanh Vien 1 : 1412278-Phan Khanh Lam
-    <br>
-    email : lam0196vn@gmail.com
-    <br>
-    Thanh Vien 2 : 1412414 - Vuong Thien Phu
-    <br>
-    email: vtphu@gmail.com
-  </div>
-  <div class="col-md-6">
-    <div id="map" style="width:450px;height:600px;background:white"></div>
-    <script>
-      function toaDo() {
-        var location = {
-          lat: 10.762638,
-          lng: 106.682586
-        };
-        var mapOptions = {
-          center: new google.maps.LatLng(10.762638, 106.682586),
-          zoom: 20,
-          mapTypeId: google.maps.MapTypeId.TERRAIN
-        }
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-        var marker = new google.maps.Marker({position: location, map: map});
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5jfbzPAgqITeBwRCHwnoXLhHkzAuEtJ0&callback=toaDo"></script>
-  </div>
+  <h3>
+    Thông tin liên hệ
+  </h3>
+  <div id="map" style="width:500px;height:500px;background:white" class="img-rounded home_image"></div>
+
+</div>
+<script>
+  function toaDo() {
+    var location = {
+      lat: 10.762638,
+      lng: 106.682586
+    };
+    var mapOptions = {
+      center: new google.maps.LatLng(10.762638, 106.682586),
+      zoom: 20,
+      mapTypeId: google.maps.MapTypeId.TERRAIN
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var marker = new google.maps.Marker({position: location, map: map});
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5jfbzPAgqITeBwRCHwnoXLhHkzAuEtJ0&callback=toaDo"></script>
+
+</div>

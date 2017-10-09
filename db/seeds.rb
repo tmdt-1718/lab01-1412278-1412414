@@ -23,6 +23,6 @@ Album.create!(id:4,title:'Dash',cover:'Src_Img/Dash/d_1.jpg',user_id:4,total_vie
 (1..4).each do |image|
 		Image.create!(title:"Corgi_#{image}",link:"Src_Img/Corgi/c_#{image}.jpg",album:'Corgi',user_id:1,view:5,album_id:1)
 		Image.create!(title:"Husky_#{image}",link:"Src_Img/Husky/h_#{image}.jpg",album:'Husky',user_id:2,view:10, album_id:2)
-		Image.create!(title:"Pug_#{image}",link:"Src_Img/Pug/h_#{image}.jpg",album:'Pug',user_id:3,view:0,album_id:3)
-		Image.create!(title:"Dash_#{image}",link:"Src_Img/Dash/h_#{image}.jpg",album:'Dash',user_id:4,view:20,album_id:4)
+		Image.create!(title:"Pug_#{image}",link:"Src_Img/Pug/p_#{image}.jpg",album:'Pug',user_id:3,view:0,album_id:3)
+		Image.create!(title:"Dash_#{image}",link:"Src_Img/Dash/d_#{image}.jpg",album:'Dash',user_id:4,view:20,album_id:4)
 end
