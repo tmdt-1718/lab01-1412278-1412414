@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+	before_action :authenticate, only: [:new]
+
 	def index
 		@articles = Article.all
 	end
@@ -17,7 +19,7 @@ class ArticlesController < ApplicationController
 		article["user_id"] = session[:id_current_user] 
 		article["view"] = 0
 		article["author"] = session[:firstname_current_user] + " " + session[:lastname_current_user]
-		article["avartar"] = "Articles/Cogri_Article.jpg"
+		article["avartar"] = "blank.png"
 
 		if article.save
 			flash[:success] = "Posted successfully!!!!"
@@ -31,5 +33,11 @@ class ArticlesController < ApplicationController
 	private
 	def article_params
 		params.require(:article).permit(:title, :content, :summary)
+	end
+
+	def authenticate
+		if session[:id_current_user].nil? && session[:firstname_current_user].nil? && session[:lastname_current_user].nil?
+			redirect_to login_path
+		end
 	end
 end
