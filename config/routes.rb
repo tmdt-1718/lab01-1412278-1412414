@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   delete '/sessions/logout', to: 'sessions#destroy', as: 'logout'
 
   get '/', to: 'home#index', as: 'home'
-  get  '/articles', to: 'articles#index'
+  
+  resources :articles
   resources :users
 end
