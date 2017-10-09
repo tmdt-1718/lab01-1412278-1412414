@@ -50,10 +50,18 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](demo.gif)
-
-Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
-
+1. Thiết kế trang web theo responsive với bootstrap với header (navigation bar, logo), left menu,footer và content, Navigation bar sẽ ẩn đi với kích thước màn hình nhỏ hơn 992px và có nút nhấn để hiển thị navigation bar, Left menu sẽ ẩn đi khi kích thước màn hình nhỏ hơn 768px và có nút nhấn để hiển thị lại left menu. Trang web được thiết kế sẽ bao gồm các trang: home, albums, about, blog. Cho phép người dùng biết họ đang ở trang nào (sử dụng breadcrumb, highlight navigation bar,...).
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412278-1412414/blob/master/gif/home_album_about_blog_HightLightNav_footer_nav_leftmenu_thunho.gif)
+2. Vào trang about sẽ thấy thông tin nhóm: tên nhóm, danh sách thành viên (mã sinh viên, họ tên, ảnh đại diện) và bản đồ google map hiển thị địa chỉ liên lạc của nhóm.
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412278-1412414/blob/master/gif/about.gif)
+3. Khi nhấn vào trang albums sẽ thấy danh sách các album đã được lưu trữ trong hệ thống. Mỗi album bao gồm: ảnh cover, tên người tạo, tổng số view của các tấm ảnh trong album. Khi nhấn vào từng album sẽ sẽ chuyển sang danh sách các tấm ảnh trong album. Mỗi tấm ảnh hiển thị các thông tin: người đăng, số lượng view và tấm ảnh dưới dạng thumbnail.
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412278-1412414/blob/master/gif/album.gif)
+4. Vào trang blog sẽ thấy danh sách các bài viết, mỗi bài viết bao gồm: nội dung rút gọn, ảnh đại diện, người đăng và số view. Nhấn vào mỗi bài viết sẽ thấy chi tiết bài viết cùng đầy đủ nội dung của bài viết.
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412278-1412414/blob/master/gif/blog.gif)
+5. Cho phép người dùng đăng nhập, đăng xuất, đăng ký thông tin tài khoản.
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412278-1412414/blob/master/gif/login_signup_logout.gif)
+6. Cho phép người dùng đã đăng nhập đăng thêm bài viết mới.
+![Video Walkthrough](https://github.com/tmdt-1718/lab01-1412278-1412414/blob/master/gif/post_article.gif)
 
 ## License
 
