@@ -1,4 +1,7 @@
 <% content_for :title, "Blog" %>
+<% if session[:firstname_current_user] && session[:lastname_current_user] %>
+    <a href="<%= new_article_path %>" class="btn btn-white btn-primary active" style="float:right;">Post articles</a>
+<% end %>
 <h1>Articles</h1>
 <% @articles.each do |article| %>
     <div class="panel panel-default">
