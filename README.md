@@ -6,7 +6,7 @@ Thành viên:
 * [x] **1412414** Vương Thiên Phú (1412414)
 * [x] **1412278** Phan Khánh Lâm (1412278)
 
-URL: **URL hosting của bài tập**
+URL: **https://tmdt-lab01.herokuapp.com/**
 
 ## Yêu cầu
 
