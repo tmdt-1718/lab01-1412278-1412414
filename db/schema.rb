@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171005055347) do
+ActiveRecord::Schema.define(version: 20171008075702) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "albums", force: :cascade do |t|
+    t.string "title"
+    t.string "cover"
+    t.integer "user_id"
+    t.integer "total_view"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "articles", force: :cascade do |t|
     t.string "name"
@@ -22,14 +31,15 @@ ActiveRecord::Schema.define(version: 20171005055347) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "email"
-    t.string "pwd"
-    t.string "fnam"
-    t.string "lname"
-    t.string "pnumber"
+  create_table "images", force: :cascade do |t|
+    t.string "title"
+    t.string "link"
+    t.string "album"
+    t.integer "user_id"
+    t.integer "view"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "album_id"
   end
 
 end

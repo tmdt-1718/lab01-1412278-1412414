@@ -1,0 +1,19 @@
+<h1> Albums </h1>
+
+<div class="col-md-12 col-xs-6">
+  <% @albums.each do |album| %>
+    <div class="thumbnail">
+        <a href="<%=album_path(album.id)%>" target="_blank">
+            <img src="<%=image_path(album.cover)%>" alt="<%=album.title %>" style="width:100%">
+            <div class="caption">
+                <p
+                    Title: <%=album.title%>
+                  <br> User ID : <%=album.user_id%>
+                  <br> Total View: <%=album.total_view%>
+                </p>
+            </div>
+        </a>
+
+    </div>
+    <%end%>
+</div>

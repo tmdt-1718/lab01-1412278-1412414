@@ -1,0 +1,18 @@
+<div class="col-md-12 col-xs-10">
+  <% @album.images.each do |image| %>
+    <div class="thumbnail">
+        <a href="<%=image_path(image.link)%>" target="_blank">
+            <img src="<%=image_path(image.link)%>" alt="<%=image.title %>" style="width:100%">
+            <div class="caption">
+              <p>
+                Picture Name : <%=image.title%> <br>
+                User ID: <%=image.user_id%> <br>
+                View: <%=image.view%> <br>
+
+              </p>
+            </div>
+        </a>
+
+    </div>
+    <%end%>
+</div>

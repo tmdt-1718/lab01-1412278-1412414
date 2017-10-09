@@ -6,6 +6,3 @@ workdir /lab01
 expose 3000
 add . /lab01
 run bundle install
-rails db:create
-rails db:migrate
-rails db:seed
