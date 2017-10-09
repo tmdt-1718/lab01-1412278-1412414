@@ -1,11 +1,12 @@
+<% content_for :active_album, "active" %>
 <div class="col-md-12 col-xs-10">
   <% @album.images.each do |image| %>
     <div class="thumbnail">
         <a href="<%=image_path(image.link)%>" target="_blank">
-            <img src="<%=image_path(image.link)%>" alt="<%=image.title %>" style="width:100%">
+            <img src="<%=image_path(image.link)%>" alt="<%=image.img_title %>" style="width:100%">
             <div class="caption">
               <p>
-                Picture Name : <%=image.title%> <br>
+                Picture Name : <%=image.img_title%> <br>
                 User ID: <%=image.user_id%> <br>
                 View: <%=image.view%> <br>
 

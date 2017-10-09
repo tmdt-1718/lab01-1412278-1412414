@@ -1,3 +1,3 @@
 class Album < ApplicationRecord
-  has_many :images
+	has_many :images
 end

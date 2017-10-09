@@ -16,8 +16,8 @@
             <div class="collapse navbar-collapse" id="my_navbar">
                 <ul class="nav navbar-nav">
                     <li class="<%= yield(:active_home) %>"><a href="/">Home</a></li>
-                    <li class="<%= yield(:active_album) %>"><a href="#">Album</a></li>
-                    <li class="<%= yield(:active_about) %>"><a href="#">About</a></li>
+                    <li class="<%= yield(:active_album) %>"><a href="<%= albums_path %>">Album</a></li>
+                    <li class="<%= yield(:active_about) %>"><a href="<%= about_path %>">About</a></li>
                     <li class="<%= yield(:active_blog) %>"><a href="<%= articles_path %>">Blog</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
