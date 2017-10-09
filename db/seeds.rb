@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Article.delete_all
 User.delete_all
-Album.delete_all
 Image.delete_all
+Album.delete_all
 
 User.create!(id: 1, firstname: 'Linh', lastname: 'Thi', phonenumber: Faker::PhoneNumber.phone_number, email: 'thiduclinh@gmail.com', password_hash: '$2a$10$bJY1NOd4/zHuuEiQaDr3L.sz1/k5DrDf5RfVUJFxYtcdRVt9Y/ZSO')
 User.create!(id: 2, firstname: 'Kim', lastname: 'Vuong', phonenumber: Faker::PhoneNumber.phone_number, email: 'vuongngockim@gmail.com', password_hash: '$2a$10$bJY1NOd4/zHuuEiQaDr3L.sz1/k5DrDf5RfVUJFxYtcdRVt9Y/ZSO')
@@ -26,23 +26,22 @@ Album.create!(id: 3, title: 'Pug', cover: 'Src_Img/Pug/p_1.jpg', user_id: 3, tot
 Album.create!(id: 4, title: 'Dash', cover: 'Src_Img/Dash/d_1.jpg', user_id: 4, total_view: 80)
 
 
-Image.create!(img_title: "Corgi_1", link: "Src_Img/Corgi/c_1.jpg", album: 'Corgi', user_id: 1, view: 5, album_id: 1)
-Image.create!(img_title: "Corgi_2", link: "Src_Img/Corgi/c_2.jpg", album: 'Corgi', user_id: 1, view: 5, album_id: 1)
-Image.create!(img_title: "Corgi_3", link: "Src_Img/Corgi/c_3.jpg", album: 'Corgi', user_id: 1, view: 5, album_id: 1)
-Image.create!(img_title: "Corgi_4", link: "Src_Img/Corgi/c_4.jpg", album: 'Corgi', user_id: 1, view: 5, album_id: 1)
+Image.create!(id: 1,  album_id: 1, img_title: "Corgi_1", link: "Src_Img/Corgi/c_1.jpg", user_id: 1, view: 5, album: 'Corgi')
+Image.create!(id: 2, img_title: "Corgi_2", link: "Src_Img/Corgi/c_2.jpg", album: 'Corgi', user_id: 1, view: 5, album_id: 1)
+Image.create!(id: 3, img_title: "Corgi_3", link: "Src_Img/Corgi/c_3.jpg", album: 'Corgi', user_id: 1, view: 5, album_id: 1)
+Image.create!(id: 4, img_title: "Corgi_4", link: "Src_Img/Corgi/c_4.jpg", album: 'Corgi', user_id: 1, view: 5, album_id: 1)
 
-Image.create!(img_title: "Husky_1", link: "Src_Img/Husky/h_1.jpg", album: 'Husky', user_id: 2, view: 10, album_id: 2)
-Image.create!(img_title: "Husky_2", link: "Src_Img/Husky/h_2.jpg", album: 'Husky', user_id: 2, view: 10, album_id: 2)
-Image.create!(img_title: "Husky_3", link: "Src_Img/Husky/h_3.jpg", album: 'Husky', user_id: 2, view: 10, album_id: 2)
-Image.create!(img_title: "Husky_4", link: "Src_Img/Husky/h_4.jpg", album: 'Husky', user_id: 2, view: 10, album_id: 2)
+Image.create!(id: 5, img_title: "Husky_1", link: "Src_Img/Husky/h_1.jpg", album: 'Husky', user_id: 2, view: 10, album_id: 2)
+Image.create!(id: 6, img_title: "Husky_2", link: "Src_Img/Husky/h_2.jpg", album: 'Husky', user_id: 2, view: 10, album_id: 2)
+Image.create!(id: 7, img_title: "Husky_3", link: "Src_Img/Husky/h_3.jpg", album: 'Husky', user_id: 2, view: 10, album_id: 2)
+Image.create!(id: 8, img_title: "Husky_4", link: "Src_Img/Husky/h_4.jpg", album: 'Husky', user_id: 2, view: 10, album_id: 2)
 
-Image.create!(img_title: "Pug_1", link: "Src_Img/Pug/p_1.jpg", album: 'Pug', user_id: 3, view: 0, album_id: 3)
-Image.create!(img_title: "Pug_2", link: "Src_Img/Pug/p_2.jpg", album: 'Pug', user_id: 3, view: 0, album_id: 3)
-Image.create!(img_title: "Pug_3", link: "Src_Img/Pug/p_3.jpg", album: 'Pug', user_id: 3, view: 0, album_id: 3)
-Image.create!(img_title: "Pug_4", link: "Src_Img/Pug/p_4.jpg", album: 'Pug', user_id: 3, view: 0, album_id: 3)
+Image.create!(id: 9, img_title: "Pug_1", link: "Src_Img/Pug/p_1.jpg", album: 'Pug', user_id: 3, view: 0, album_id: 3)
+Image.create!(id: 10, img_title: "Pug_2", link: "Src_Img/Pug/p_2.jpg", album: 'Pug', user_id: 3, view: 0, album_id: 3)
+Image.create!(id: 11, img_title: "Pug_3", link: "Src_Img/Pug/p_3.jpg", album: 'Pug', user_id: 3, view: 0, album_id: 3)
+Image.create!(id: 12, img_title: "Pug_4", link: "Src_Img/Pug/p_4.jpg", album: 'Pug', user_id: 3, view: 0, album_id: 3)
 
-Image.create!(img_title: "Dash_1", link: "Src_Img/Dash/d_1.jpg", album: 'Dash', user_id: 4, view: 20, album_id: 4)
-Image.create!(img_title: "Dash_2", link: "Src_Img/Dash/d_2.jpg", album: 'Dash', user_id: 4, view: 20, album_id: 4)
-Image.create!(img_title: "Dash_3", link: "Src_Img/Dash/d_3.jpg", album: 'Dash', user_id: 4, view: 20, album_id: 4)
-Image.create!(img_title: "Dash_4", link: "Src_Img/Dash/d_4.jpg", album: 'Dash', user_id: 4, view: 20, album_id: 4)
-
+Image.create!(id: 13, img_title: "Dash_1", link: "Src_Img/Dash/d_1.jpg", album: 'Dash', user_id: 4, view: 20, album_id: 4)
+Image.create!(id: 14, img_title: "Dash_2", link: "Src_Img/Dash/d_2.jpg", album: 'Dash', user_id: 4, view: 20, album_id: 4)
+Image.create!(id: 15, img_title: "Dash_3", link: "Src_Img/Dash/d_3.jpg", album: 'Dash', user_id: 4, view: 20, album_id: 4)
+Image.create!(id: 16, img_title: "Dash_4", link: "Src_Img/Dash/d_4.jpg", album: 'Dash', user_id: 4, view: 20, album_id: 4)

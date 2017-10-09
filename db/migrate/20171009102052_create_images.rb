@@ -6,6 +6,7 @@ class CreateImages < ActiveRecord::Migration[5.1]
       t.string :link
       t.integer :user_id
       t.integer :view
+      t.string :album
 
       t.timestamps
     end

@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20171009102052) do
     t.string "link"
     t.integer "user_id"
     t.integer "view"
+    t.string "album"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["album_id"], name: "index_images_on_album_id"
