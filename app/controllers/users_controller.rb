@@ -4,6 +4,8 @@ class UsersController < ApplicationController
 
 	def create
 		user = User.find_by(user_email_params)
+		max_id = User.maximum("id");
+		max_id += 1
 
 		if user.nil?
 			@user = User.new(user_params)
